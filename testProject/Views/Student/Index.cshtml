@@ -1,0 +1,18 @@
+﻿@model System.Collections.Generic.List<testProject.Models.IndexStudentModel>
+
+<table>
+    @foreach (var student in Model)
+    {
+        <tr>
+            <td>
+                @student.Id
+            </td>
+            <td>
+                @student.Name
+            </td>
+            <td>
+                @student.AverageMark
+            </td>
+        </tr>
+    }
+</table>
